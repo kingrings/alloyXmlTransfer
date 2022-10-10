@@ -1,0 +1,247 @@
+<alloy builddate="2018-04-17 20:57 PDT">
+
+<instance maxseq="4" command="Run Wcc for 4 but 4 int" noOverflow="true" filename="E:\git\vis\abstractExecution.als">
+
+<intscope bitwidth="4">
+  <atoms kind="AtomRange">
+    <start val="-8"/>
+    <end val="7"/>
+    <inc val="1"/>
+  </atoms>
+</intscope>
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/E" ID="4" parentID="2">
+   <atom label="E$0"/>
+   <atom label="E$1"/>
+   <atom label="E$2"/>
+   <atom label="E$3"/>
+</sig>
+
+<field label="op" ID="5" parentID="4">
+   <tuple> <atom label="E$0"/> <atom label="Write$0"/> </tuple>
+   <tuple> <atom label="E$1"/> <atom label="Read$1"/> </tuple>
+   <tuple> <atom label="E$2"/> <atom label="Read$0"/> </tuple>
+   <tuple> <atom label="E$3"/> <atom label="Write$1"/> </tuple>
+   <types> <type ID="4"/> <type ID="6"/> </types>
+   <types> <type ID="4"/> <type ID="7"/> </types>
+</field>
+
+<field label="rval" ID="8" parentID="4">
+   <tuple> <atom label="E$0"/> <atom label="OK$0"/> </tuple>
+   <tuple> <atom label="E$1"/> <atom label="v1$0"/> </tuple>
+   <tuple> <atom label="E$2"/> <atom label="Undef$0"/> </tuple>
+   <tuple> <atom label="E$3"/> <atom label="OK$0"/> </tuple>
+   <types> <type ID="4"/> <type ID="9"/> </types>
+</field>
+
+<field label="so" ID="10" parentID="4">
+   <tuple> <atom label="E$0"/> <atom label="E$1"/> </tuple>
+   <types> <type ID="4"/> <type ID="4"/> </types>
+</field>
+
+<field label="vis" ID="11" parentID="4">
+   <tuple> <atom label="E$0"/> <atom label="E$1"/> </tuple>
+   <types> <type ID="4"/> <type ID="4"/> </types>
+</field>
+
+<field label="ar" ID="12" parentID="4">
+   <tuple> <atom label="E$0"/> <atom label="E$1"/> </tuple>
+   <tuple> <atom label="E$0"/> <atom label="E$2"/> </tuple>
+   <tuple> <atom label="E$0"/> <atom label="E$3"/> </tuple>
+   <tuple> <atom label="E$1"/> <atom label="E$1"/> </tuple>
+   <tuple> <atom label="E$1"/> <atom label="E$3"/> </tuple>
+   <tuple> <atom label="E$2"/> <atom label="E$2"/> </tuple>
+   <tuple> <atom label="E$2"/> <atom label="E$3"/> </tuple>
+   <tuple> <atom label="E$3"/> <atom label="E$2"/> </tuple>
+   <types> <type ID="4"/> <type ID="4"/> </types>
+</field>
+
+<field label="session" ID="13" parentID="4">
+   <tuple> <atom label="E$0"/> <atom label="Session$2"/> </tuple>
+   <tuple> <atom label="E$1"/> <atom label="Session$2"/> </tuple>
+   <tuple> <atom label="E$2"/> <atom label="Session$1"/> </tuple>
+   <tuple> <atom label="E$3"/> <atom label="Session$0"/> </tuple>
+   <types> <type ID="4"/> <type ID="14"/> </types>
+</field>
+
+<field label="ve" ID="15" parentID="4">
+   <types> <type ID="4"/> <type ID="4"/> </types>
+</field>
+
+<sig label="this/Session" ID="14" parentID="2">
+   <atom label="Session$0"/>
+   <atom label="Session$1"/>
+   <atom label="Session$2"/>
+</sig>
+
+<field label="events" ID="16" parentID="14">
+   <tuple> <atom label="Session$0"/> <atom label="0"/> <atom label="E$3"/> </tuple>
+   <tuple> <atom label="Session$1"/> <atom label="0"/> <atom label="E$2"/> </tuple>
+   <tuple> <atom label="Session$2"/> <atom label="0"/> <atom label="E$0"/> </tuple>
+   <tuple> <atom label="Session$2"/> <atom label="1"/> <atom label="E$1"/> </tuple>
+   <types> <type ID="14"/> <type ID="0"/> <type ID="4"/> </types>
+</field>
+
+<sig label="this/History" ID="17" parentID="2" one="yes">
+   <atom label="History$0"/>
+</sig>
+
+<field label="sessions" ID="18" parentID="17">
+   <tuple> <atom label="History$0"/> <atom label="Session$0"/> </tuple>
+   <tuple> <atom label="History$0"/> <atom label="Session$1"/> </tuple>
+   <tuple> <atom label="History$0"/> <atom label="Session$2"/> </tuple>
+   <types> <type ID="17"/> <type ID="14"/> </types>
+</field>
+
+<sig label="this/v1" ID="19" parentID="9" one="yes">
+   <atom label="v1$0"/>
+</sig>
+
+<sig label="this/v2" ID="20" parentID="9" one="yes">
+   <atom label="v2$0"/>
+</sig>
+
+<sig label="this/v3" ID="21" parentID="9" one="yes">
+   <atom label="v3$0"/>
+</sig>
+
+<sig label="this/v4" ID="22" parentID="9" one="yes">
+   <atom label="v4$0"/>
+</sig>
+
+<sig label="this/Undef" ID="23" parentID="9" one="yes">
+   <atom label="Undef$0"/>
+</sig>
+
+<sig label="this/OK" ID="24" parentID="9" one="yes">
+   <atom label="OK$0"/>
+</sig>
+
+<sig label="this/Value" ID="9" parentID="2" abstract="yes">
+</sig>
+
+<sig label="this/o1" ID="25" parentID="26" one="yes">
+   <atom label="o1$0"/>
+</sig>
+
+<sig label="this/o2" ID="27" parentID="26" one="yes">
+   <atom label="o2$0"/>
+</sig>
+
+<sig label="this/o3" ID="28" parentID="26" one="yes">
+   <atom label="o3$0"/>
+</sig>
+
+<sig label="this/x" ID="29" parentID="30" one="yes">
+   <atom label="x$0"/>
+</sig>
+
+<sig label="this/y" ID="31" parentID="30" one="yes">
+   <atom label="y$0"/>
+</sig>
+
+<sig label="this/z" ID="32" parentID="30" one="yes">
+   <atom label="z$0"/>
+</sig>
+
+<sig label="this/Key" ID="30" parentID="26">
+</sig>
+
+<sig label="this/p" ID="33" parentID="34" one="yes">
+   <atom label="p$0"/>
+</sig>
+
+<sig label="this/q" ID="35" parentID="34" one="yes">
+   <atom label="q$0"/>
+</sig>
+
+<sig label="this/Queue" ID="34" parentID="26">
+</sig>
+
+<sig label="this/Obj" ID="26" parentID="2" abstract="yes">
+</sig>
+
+<sig label="this/Read" ID="6" parentID="36">
+   <atom label="Read$0"/>
+   <atom label="Read$1"/>
+</sig>
+
+<sig label="this/Write" ID="7" parentID="36">
+   <atom label="Write$0"/>
+   <atom label="Write$1"/>
+</sig>
+
+<field label="value" ID="37" parentID="7">
+   <tuple> <atom label="Write$0"/> <atom label="v1$0"/> </tuple>
+   <tuple> <atom label="Write$1"/> <atom label="v1$0"/> </tuple>
+   <types> <type ID="7"/> <type ID="19"/> </types>
+   <types> <type ID="7"/> <type ID="20"/> </types>
+   <types> <type ID="7"/> <type ID="21"/> </types>
+   <types> <type ID="7"/> <type ID="22"/> </types>
+</field>
+
+<field label="rf" ID="38" parentID="7">
+   <tuple> <atom label="Write$0"/> <atom label="Read$1"/> </tuple>
+   <types> <type ID="7"/> <type ID="6"/> </types>
+</field>
+
+<sig label="this/RWOperation" ID="36" parentID="2">
+</sig>
+
+<field label="key" ID="39" parentID="36">
+   <tuple> <atom label="Write$0"/> <atom label="y$0"/> </tuple>
+   <tuple> <atom label="Read$0"/> <atom label="z$0"/> </tuple>
+   <tuple> <atom label="Read$1"/> <atom label="y$0"/> </tuple>
+   <tuple> <atom label="Write$1"/> <atom label="x$0"/> </tuple>
+   <types> <type ID="36"/> <type ID="29"/> </types>
+   <types> <type ID="36"/> <type ID="31"/> </types>
+   <types> <type ID="36"/> <type ID="32"/> </types>
+</field>
+
+<sig label="this/QueueOperation" ID="40" parentID="2">
+   <atom label="QueueOperation$0"/>
+   <atom label="QueueOperation$1"/>
+   <atom label="QueueOperation$2"/>
+   <atom label="QueueOperation$3"/>
+</sig>
+
+<field label="queue" ID="41" parentID="40">
+   <tuple> <atom label="QueueOperation$0"/> <atom label="q$0"/> </tuple>
+   <tuple> <atom label="QueueOperation$1"/> <atom label="q$0"/> </tuple>
+   <tuple> <atom label="QueueOperation$2"/> <atom label="q$0"/> </tuple>
+   <tuple> <atom label="QueueOperation$3"/> <atom label="p$0"/> </tuple>
+   <types> <type ID="40"/> <type ID="33"/> </types>
+   <types> <type ID="40"/> <type ID="35"/> </types>
+</field>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+<sig label="integer/Bit" ID="42">
+   <atom label="-1"/>
+   <atom label="0"/>
+   <type ID="1"/>
+</sig>
+
+<skolem label="$this/hb" ID="m0">
+   <tuple> <atom label="E$0"/> <atom label="E$1"/> </tuple>
+   <types> <type ID="4"/> <type ID="4"/> </types>
+</skolem>
+
+</instance>
+
+<source filename="E:\git\vis\abstractExecution.als" content="module AbstractExecution&#x000a;&#x000a;let id[A] = A&lt;:iden&#x000a;&#x000a;// Abstract execution &#x000a;sig E {&#x000a;    op: one Operation,&#x000a;    rval: Value, // Assuming that the events are complete&#x000a;    so: set E,&#x000a;    vis: set E,&#x000a;    ar: set E,&#x000a;    session: one Session,&#x000a;    ve: set E&#x000a;} {&#x000a;    all e: E | e in e.@session.events.elems&#x000a;    all e: E | e.@ve in e.@vis&#x000a;}&#x000a;&#x000a;// A session is a sequence of events&#x000a;sig Session {&#x000a;    events: seq E&#x000a;}&#x000a;&#x000a;// A history is a set of sessions&#x000a;one sig History {&#x000a;    sessions: set Session&#x000a;}&#x000a;&#x000a;abstract sig Value {}&#x000a;one sig v1, v2, v3, v4 extends Value {}&#x000a;let V = v1 + v2 + v3 + v4&#x000a;one sig Undef extends Value {} // Initial value&#x000a;one sig OK extends Value {} // Writes return OK&#x000a;&#x000a;abstract sig Obj {}&#x000a;one sig o1, o2, o3 extends Obj {}&#x000a;let O = o1 + o2 + o3&#x000a;&#x000a;sig Key extends Obj {}&#x000a;one sig x, y, z extends Key {}&#x000a;let K = x + y + z&#x000a;&#x000a;sig Queue extends Obj {}&#x000a;one sig p, q extends Queue {}&#x000a;let Q = p + q &#x000a;&#x000a;sig RWOperation {&#x000a;    key: one K&#x000a;}&#x000a;sig QueueOperation {&#x000a;    queue: one Q&#x000a;}&#x000a;&#x000a;// read-write register&#x000a;sig Read extends RWOperation {}&#x000a;sig Write extends RWOperation {&#x000a;    value: V,&#x000a;    rf: lone Read  // Reads-from relation&#x000a;}&#x000a;let Operation = Read + Write&#x000a;&#x000a;/***************&#x000a;// key-value store&#x000a;sig Get extends RWOperation {}&#x000a;sig Put extends RWOperation {&#x000a;    value: V&#x000a;}&#x000a;&#x000a;// fifo queue&#x000a;sig Dequeue extends QueueOperation {}&#x000a;sig Enqueue extends QueueOperation {&#x000a;    value: V&#x000a;}&#x000a;*****************/&#x000a;fact WellFormedRF {&#x000a;    rf in Write &lt;: key.~key :&gt; Read &#x000a;    all e: op.Read | e.rval = Undef or one e&quot;: op.Write | e.rval = e&quot;.op.value and e&quot;.op.rf = e.op&#x000a;    all e, e&quot;: E | e in op.Write and e&quot; in op.Read and e.op-&gt;e&quot;.op in rf =&gt; e-&gt;e&quot; in vis&#x000a;}&#x000a;&#x000a;fact WellFormedSession { all s: Session | !s.events.hasDups and !s.events.isEmpty }&#x000a;// All sessions in one history &#x000a;fact WellFormedHistory { all s: Session| s in History.sessions }&#x000a;&#x000a;fact AllOpsAreAssociatedWithEvents { all o : Operation | one op.o }&#x000a;fact EachEventInOneSession { all e: E | one s: Session | e in s.events.elems }&#x000a;// Each write event returns ok&#x000a;fact WritesReturnOK { all w : op.Write | w.rval = OK }&#x000a;// Each read event returns a value or initial value undef&#x000a;fact ReadsReturnValuesOrUndef { all r : op.Read | r.rval in V + Undef }&#x000a;&#x000a;pred IsTotalOverEvents[s: set E, r: E-&gt;E] {&#x000a;    all disj e, e&quot;: E | e in s and e&quot; in s =&gt; e.r = e&quot; and e&quot;.r != e or e&quot;.r = e and e.r != e&quot;&#x000a;}&#x000a;&#x000a;fact SessionOrderOverOneSession {so in session.~session}&#x000a;fact SessionOrderIsPartial { no id[E] &amp; so and so.so in so }&#x000a;fact SessionOrderIsTotalOrderOverOneSession { all s: Session | IsTotalOverEvents[s.events.elems,so] }&#x000a;&#x000a;fact VisibilityIsAcyclic { no id[E] &amp; ^vis }&#x000a;&#x000a;fun lastVisibleWrite(e: E): lone E {&#x000a;    {w : op.Write | w-&gt;e in vis and no ww : op.Write | ww-&gt;e in vis and w-&gt;ww in ar}&#x000a;}&#x000a;&#x000a;// An read returns Undef or preceding last write&#x000a;fact ReadLastVisibleWrite {&#x000a;    all r : op.Read | &#x000a;        some (op.Write &amp; vis.r) =&gt; r.rval=lastVisibleWrite[r].op.value&#x000a;}&#x000a;// Any read in V(e) of an event e can be justified&#x000a;fact VeIsReasonable {&#x000a;    all r: op.Read.ve | r in op.Read =&gt; some (op.Write &amp; vis.r) =&gt; r.rval=lastVisibleWrite[r].op.value&#x000a;}&#x000a;&#x000a;pred ArIsTotalOrder { no id[E] &amp; ar and ar.ar in ar and E-&gt;E in ar + ~ar + id[E] }&#x000a;&#x000a;pred VisAr { vis in ar }&#x000a;//fact SessionOrderIsConsistentWithVisibility { so in vis }&#x000a;&#x000a;// Recipes for visibility&#x000a;pred SoInVis {so in vis}&#x000a;&#x000a;// Happens-before relation&#x000a;fun hb[]: E-&gt;E { ^(so + vis) }&#x000a;pred CausalVisibility {hb in vis}&#x000a;&#x000a;// Recipes for V &#x000a;pred Ve { all e: E | e.ve = none }&#x000a;pred Ve2 { all e: E | e.ve = e.so }&#x000a;pred Ve3 { all e: E | e.ve = e.vis }&#x000a;&#x000a;// Causal consistency variants&#x000a;pred Wcc { CausalVisibility and VisAr and Ve }&#x000a;pred CM { CausalVisibility and VisAr and Ve2 }&#x000a;pred SCC { CausalVisibility and VisAr and Ve3 }&#x000a;pred WCCv { CausalVisibility and VisAr and Ve and ArIsTotalOrder}&#x000a;pred CMv { CausalVisibility and VisAr and Ve2 and ArIsTotalOrder }&#x000a;pred SCCv { CausalVisibility and VisAr and Ve3 and ArIsTotalOrder }&#x000a;&#x000a;let interesting_model[model] {&#x000a;    model&#x000a;}&#x000a;&#x000a;run Wcc {&#x000a;  interesting_model[Wcc] and #Read&gt;1 and #Write&gt;1&#x000a;} for 4&#x000a;&#x000a;run CM {&#x000a;  interesting_model[CM] and #Read&gt;1 and #Write&gt;1&#x000a;} for 8&#x000a;&#x000a;run SCC {&#x000a;  interesting_model[SCC] and #Read&gt;1 and #Write&gt;1&#x000a;} for 8&#x000a;&#x000a;run WCCv {&#x000a;  interesting_model[Wcc] and #Read&gt;1 and #Write&gt;1&#x000a;} for 8&#x000a;&#x000a;run CMv {&#x000a;  interesting_model[CMv] and #Read&gt;1 and #Write&gt;1&#x000a;} for 8&#x000a;&#x000a;run SCCv {&#x000a;  interesting_model[SCCv] and #Read&gt;1 and #Write&gt;1&#x000a;} for 8&#x000a;"/>
+
+<source filename="\$alloy4$\models\util\integer.als" content="module util/integer&#x000a;&#x000a;/**&#x000a; * A collection of utility functions for using Integers in Alloy.&#x000a; * Note that integer overflows are silently truncated to the current bitwidth&#x000a; * using the 2&apos;s complement arithmetic, unless the &quot;forbid overfows&quot; option is&#x000a; * turned on, in which case only models that don&apos;t have any overflows are &#x000a; * analyzed. &#x000a; */&#x000a; &#x000a;sig Bit in Int {}&#x000a;&#x000a;fun BitTrue  : Bit { -1 }&#x000a;fun BitFalse : Bit { 0 }&#x000a;&#x000a;fact { Bit = BitFalse + BitTrue }&#x000a; &#x000a;&#x000a;fun add  [n1, n2: Int] : Int { this/plus[n1, n2] }&#x000a;fun plus [n1, n2: Int] : Int { n1 fun/add n2 }&#x000a;&#x000a;fun sub   [n1, n2: Int] : Int { this/minus[n1, n2] }&#x000a;fun minus [n1, n2: Int] : Int { n1 fun/sub n2 }&#x000a;&#x000a;fun mul [n1, n2: Int] : Int { n1 fun/mul n2 }&#x000a;&#x000a;fun bvneg [n: Int]      : Int { fun/bvneg n     }&#x000a;fun bvnot [n: Int]      : Int { fun/bvnot n     }&#x000a;fun bvand [n1, n2: Int] : Int { n1 fun/bvand n2 }&#x000a;fun bvxor [n1, n2: Int] : Int { n1 fun/bvxor n2 }&#x000a;fun bvor  [n1, n2: Int] : Int { n1 fun/bvor n2  }&#x000a;fun bvshl [n1, n2: Int] : Int { n1 fun/bvshl n2 }&#x000a;fun bvshr [n1, n2: Int] : Int { n1 fun/bvshr n2 }&#x000a;fun bvsha [n1, n2: Int] : Int { n1 fun/bvsha n2 }&#x000a;pred bveq [n1, n2: Int]       { n1 fun/bveq n2 }&#x000a;&#x000a;fun bvadd [n1, n2: Int] : Int { this/plus[n1, n2] }&#x000a;fun bvsub [n1, n2: Int] : Int { this/minus[n1, n2] }&#x000a;fun bvmul [n1, n2: Int] : Int { this/mul[n1, n2] }&#x000a;fun bvdiv [n1, n2: Int] : Int { this/div[n1, n2] }&#x000a;&#x000a;fun Not [n: Int]      : Int { this/bvnot[n] }&#x000a;fun And [n1, n2: Int] : Int { this/bvand[n1, n2] }&#x000a;fun Nand[n1, n2: Int] : Int { this/bvnot[this/bvand[n1, n2]] }&#x000a;fun Or  [n1, n2: Int] : Int { this/bvor[n1, n2] }&#x000a;fun Nor [n1, n2: Int] : Int { this/bvnot[this/bvor[n1, n2]] }&#x000a;fun Xor [n1, n2: Int] : Int { this/bvxor[n1, n2] }&#x000a;&#x000a;/**&#x000a; * Performs the division with &quot;round to zero&quot; semantics, except the following 3 cases&#x000a; * 1) if a is 0, then it returns 0&#x000a; * 2) else if b is 0, then it returns 1 if a is negative and -1 if a is positive&#x000a; * 3) else if a is the smallest negative integer, and b is -1, then it returns a&#x000a; */&#x000a;fun div [n1, n2: Int] : Int { n1 fun/div n2 }&#x000a;&#x000a;/** answer is defined to be the unique integer that satisfies &quot;a = ((a/b)*b) + remainder&quot; */&#x000a;fun rem [n1, n2: Int] : Int { n1 fun/rem n2 }&#x000a;&#x000a;/** negate */&#x000a;fun negate [n: Int] : Int { 0 fun/sub n }&#x000a;&#x000a;/** equal to */&#x000a;pred eq [n1, n2: Int] { int[n1] = int[n2] }&#x000a;&#x000a;/** greater than */&#x000a;pred gt [n1, n2: Int] { n1 &gt; n2 }&#x000a;&#x000a;/** less then */&#x000a;pred lt [n1, n2: Int] { n1 &lt; n2 }&#x000a;&#x000a;/** greater than or equal */&#x000a;pred gte [n1, n2: Int] { n1 &gt;= n2 }&#x000a;&#x000a;/** less than or equal */&#x000a;pred lte [n1, n2: Int] { n1 &lt;= n2 }&#x000a;&#x000a;/** integer is zero */&#x000a;pred zero [n: Int] { n = 0 }&#x000a;&#x000a;/** positive */&#x000a;pred pos  [n: Int] { n &gt; 0 }&#x000a;&#x000a;/** negative */&#x000a;pred neg  [n: Int] { n &lt; 0 }&#x000a;&#x000a;/** non-positive */&#x000a;pred nonpos [n: Int] { n &lt;= 0 }&#x000a;&#x000a;/** non-negative */&#x000a;pred nonneg [n: Int] { n &gt;= 0 }&#x000a;&#x000a;/** signum (aka sign or sgn) */&#x000a;fun signum [n: Int] : Int { n&lt;0 =&gt; (0 fun/sub 1) else (n&gt;0 =&gt; 1 else 0) }&#x000a;&#x000a;/**&#x000a; * returns the ith element (zero-based) from the set s&#x000a; * in the ordering of &apos;next&apos;, which is a linear ordering&#x000a; * relation like that provided by util/ordering&#x000a; */&#x000a;fun int2elem[i: Int, next: univ-&gt;univ, s: set univ] : lone s {&#x000a;  {e: s | #^next.e = int i }&#x000a;}&#x000a;&#x000a;/**&#x000a; * returns the index of the element (zero-based) in the&#x000a; * ordering of next, which is a linear ordering relation&#x000a; * like that provided by util/ordering&#x000a; */&#x000a;fun elem2int[e: univ, next: univ-&gt;univ] : lone Int {&#x000a;  Int[#^next.e]&#x000a;}&#x000a;&#x000a;/** returns the largest integer in the current bitwidth */&#x000a;fun max:one Int { fun/max }&#x000a;&#x000a;/** returns the smallest integer in the current bitwidth */&#x000a;fun min:one Int { fun/min }&#x000a;&#x000a;/** maps each integer (except max) to the integer after it */&#x000a;fun next:Int-&gt;Int { fun/next }&#x000a;&#x000a;/** maps each integer (except min) to the integer before it */&#x000a;fun prev:Int-&gt;Int { ~next }&#x000a;&#x000a;/** given a set of integers, return the largest element */&#x000a;fun max [es: set Int]: lone Int { es - es.^prev }&#x000a;&#x000a;/** given a set of integers, return the smallest element */&#x000a;fun min [es: set Int]: lone Int { es - es.^next }&#x000a;&#x000a;/** given an integer, return all integers prior to it */&#x000a;fun prevs [e: Int]: set Int { e.^prev }&#x000a;&#x000a;/** given an integer, return all integers following it */&#x000a;fun nexts [e: Int]: set Int { e.^next }&#x000a;&#x000a;/** returns the larger of the two integers */&#x000a;fun larger [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; b else a) }&#x000a;&#x000a;/** returns the smaller of the two integers */&#x000a;fun smaller [e1, e2: Int]: Int { let a=int[e1], b=int[e2] | (a&lt;b =&gt; a else b) }&#x000a;"/>
+
+<source filename="\$alloy4$\models\util\sequniv.als" content="module util/sequniv&#x000a;&#x000a;open util/integer as ui&#x000a;&#x000a;/*&#x000a; * NOTE: Do not include this module manually.&#x000a; * Instead, use the &quot;seq&quot; keyword which will automatically&#x000a; * import this module with the correct additional constraints as needed.&#x000a; */&#x000a;&#x000a;/*&#x000a; * A sequence utility for modeling sequences as just a&#x000a; * relation as opposed to reifying them into sequence&#x000a; * atoms like the util/sequence module does.&#x000a; *&#x000a; * Precondition: each input sequence must range over a prefix&#x000a; * of seq/Int.&#x000a; *&#x000a; * Postcondition: we guarantee the returned sequence&#x000a; * also ranges over a prefix of seq/Int.&#x000a; *&#x000a; * @author Greg Dennis&#x000a; */&#x000a;&#x000a;/** sequence covers a prefix of seq/Int */&#x000a;pred isSeq[s: Int -&gt; univ] {&#x000a;  s in seq/Int -&gt; lone univ&#x000a;  s.inds - ui/next[s.inds] in 0&#x000a;}&#x000a;&#x000a;/** returns all the elements in this sequence */&#x000a;fun elems [s: Int -&gt; univ]: set (Int.s) { seq/Int . s }&#x000a;&#x000a;/**&#x000a; * returns the first element in the sequence&#x000a; * (Returns the empty set if the sequence is empty)&#x000a; */&#x000a;fun first [s: Int -&gt; univ]: lone (Int.s) { s[0] }&#x000a;&#x000a;/**&#x000a; * returns the last element in the sequence&#x000a; * (Returns the empty set if the sequence is empty)&#x000a; */&#x000a;fun last [s: Int -&gt; univ]: lone (Int.s) { s[lastIdx[s]] }&#x000a;&#x000a;/**&#x000a; * returns the cdr of the sequence&#x000a; * (Returns the empty sequence if the sequence has 1 or fewer element)&#x000a; */&#x000a;fun rest [s: Int -&gt; univ] : s { seq/Int &lt;: ((ui/next).s) }&#x000a;&#x000a;/** returns all but the last element of the sequence */&#x000a;fun butlast [s: Int -&gt; univ] : s {&#x000a;  (seq/Int - lastIdx[s]) &lt;: s&#x000a;}&#x000a;&#x000a;/** true if the sequence is empty */&#x000a;pred isEmpty [s: Int -&gt; univ] { no s }&#x000a;&#x000a;/** true if this sequence has duplicates */&#x000a;pred hasDups [s: Int -&gt; univ] { # elems[s] &lt; # inds[s] }&#x000a;&#x000a;/** returns all the indices occupied by this sequence */&#x000a;fun inds [s: Int -&gt; univ]: set Int { s.univ }&#x000a;&#x000a;/**&#x000a; * returns last index occupied by this sequence&#x000a; * (Returns the empty set if the sequence is empty)&#x000a; */&#x000a;fun lastIdx [s: Int -&gt; univ]: lone Int { ui/max[inds[s]] }&#x000a;&#x000a;/**&#x000a; * returns the index after the last index&#x000a; * if this sequence is empty, returns 0&#x000a; * if this sequence is full, returns empty set&#x000a; */&#x000a;fun afterLastIdx [s: Int -&gt; univ] : lone Int { ui/min[seq/Int - inds[s]] }&#x000a;&#x000a;/** returns first index at which given element appears or the empty set if it doesn&apos;t */&#x000a;fun idxOf [s: Int -&gt; univ, e: univ] : lone Int { ui/min[indsOf[s, e]] }&#x000a;&#x000a;/** returns last index at which given element appears or the empty set if it doesn&apos;t */&#x000a;fun lastIdxOf [s: Int -&gt; univ, e: univ] : lone Int { ui/max[indsOf[s, e]] }&#x000a;&#x000a;/** returns set of indices at which given element appears or the empty set if it doesn&apos;t */&#x000a;fun indsOf [s: Int -&gt; univ, e: univ] : set Int { s.e }&#x000a;&#x000a;/**&#x000a; * return the result of appending e to the end of s&#x000a; * (returns s if s exhausted seq/Int)&#x000a; */&#x000a;fun add [s: Int -&gt; univ, e: univ] : s + (seq/Int-&gt;e) {&#x000a;  setAt[s, afterLastIdx[s], e]&#x000a;}&#x000a;&#x000a;/**&#x000a; * returns the result of setting the value at index i in sequence to e&#x000a; * Precondition: 0 &lt;= i &lt; #s&#x000a; */&#x000a;fun setAt [s: Int -&gt; univ, i: Int, e: univ] : s + (seq/Int-&gt;e) {&#x000a;  s ++ i -&gt; e&#x000a;}&#x000a;&#x000a;/**&#x000a; * returns the result of inserting value e at index i&#x000a; * (if sequence was full, the original last element will be removed first)&#x000a; * Precondition: 0 &lt;= i &lt;= #s&#x000a; */&#x000a;fun insert [s: Int -&gt; univ, i: Int, e: univ] : s + (seq/Int-&gt;e) {&#x000a;  seq/Int &lt;: ((ui/prevs[i] &lt;: s) + (i-&gt;e) + ui/prev.((ui/nexts[i] + i) &lt;: s))&#x000a;}&#x000a;&#x000a;/**&#x000a; * returns the result of deleting the value at index i&#x000a; * Precondition: 0 &lt;= i &lt; #s&#x000a; */&#x000a;fun delete[s: Int -&gt; univ, i: Int] : s {&#x000a;  (ui/prevs[i] &lt;: s) + (ui/next).(ui/nexts[i] &lt;: s)&#x000a;}&#x000a;&#x000a;/**&#x000a; * appended is the result of appending s2 to s1&#x000a; * (If the resulting sequence is too long, it will be truncated)&#x000a; */&#x000a;fun append [s1, s2: Int -&gt; univ] : s1+s2 {&#x000a;  let shift = {i&apos;, i: seq/Int | int[i&apos;] = ui/add[int[i], ui/add[int[lastIdx[s1]], 1]] } |&#x000a;    no s1 =&gt; s2 else (s1 + shift.s2)&#x000a;}&#x000a;&#x000a;/**&#x000a; * returns the subsequence of s between from and to, inclusive&#x000a; * Precondition: 0 &lt;= from &lt;= to &lt; #s&#x000a; */&#x000a;fun subseq [s: Int -&gt; univ, from, to: Int] : s {&#x000a;  let shift = {i&apos;, i: seq/Int | int[i&apos;] = ui/sub[int[i], int[from]] } |&#x000a;    shift.((seq/Int - ui/nexts[to]) &lt;: s)&#x000a;}&#x000a;"/>
+
+</alloy>
